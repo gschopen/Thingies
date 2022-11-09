@@ -1,0 +1,23 @@
+public void setup()
+{
+  Doodad one = new Doodad();
+  Doodad two = new Doodad();
+  one.setNum(3.14159);
+  two.setNum(2.71828);
+  System.out.println("Sum is " + (one.getNum() + two.getNum()));
+}
+
+class Doodad
+{
+  private double myNum;
+  public Doodad()
+  {
+    myNum = 0;
+  }
+  public double getNum(){
+  return myNum;
+  }
+  public void setNum(double n){
+ myNum = n;
+  }
+}
